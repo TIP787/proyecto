@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gestion_Biblioteca"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Categorias.FrmCategorias"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Gastos.FrmGastos"
+            android:exported="false" />
+        <activity
+            android:name=".Gastos.Lista_Gastos"
+            android:exported="false" />
+        <activity
+            android:name=".Gastos.Gastos_Especificos"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".Ingresos.FrmIngresos"
+            android:exported="false" />
+        <activity
+            android:name=".Ingresos.Lista_Ingresos"
+            android:exported="false" />
+        <activity
+            android:name=".Ingresos.Ingresos_Especificos"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".Inventarios.FrmInventarios"
+            android:exported="false" />
+        <activity
+            android:name=".Inventarios.Lista_Inventarios"
+            android:exported="false" />
+        <activity
+            android:name=".Inventarios.Libros_Especificos"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Cuotas.FrmCuotas"
+            android:exported="false" />
+        <activity
+            android:name=".Cuotas.Registro_Pagos"
+            android:exported="false" />
+        <activity
+            android:name=".Cuotas.Pagos_Especificos"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Retiros.FrmRetiros"
+            android:exported="false" />
+        <activity
+            android:name=".Retiros.Libros_Retirados"
+            android:exported="false" />
+        <activity
+            android:name=".Retiros.Retiro_Especifico"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Socios.FrmSocios"
+            android:exported="false"
+            android:theme="@style/Theme.Gestion_Biblioteca" />
+        <activity
+            android:name=".Socios.Lista_Socios"
+            android:exported="false"
+            android:theme="@style/Theme.Gestion_Biblioteca" />
+        <activity
+            android:name=".Socios.Socio_Especifico"
+            android:exported="false"
+            android:theme="@style/Theme.Gestion_Biblioteca" />
+
+
+        <activity
+            android:name=".Formulario_Principal"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

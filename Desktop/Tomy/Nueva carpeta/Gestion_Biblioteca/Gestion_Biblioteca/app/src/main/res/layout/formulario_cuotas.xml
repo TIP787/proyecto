@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center_horizontal">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pago de cuotas"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal" />
+
+    <!-- EditText para Último Pago -->
+    <EditText
+        android:id="@+id/etUltimoPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Último Pago"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="Fecha del último pago" />
+
+    <!-- EditText para Nombre -->
+    <EditText
+        android:id="@+id/etNombrePC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="Nombre del socio" />
+
+    <!-- EditText para Monto -->
+    <EditText
+        android:id="@+id/etMontoPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monto"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Monto del pago" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal">
+
+        <!-- Botón Atras -->
+        <Button
+            android:id="@+id/btnAtrasPC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Atrás"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardarPC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Botón Registro de Pagos -->
+    <Button
+        android:id="@+id/btnRegistroPagosPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Pagos"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

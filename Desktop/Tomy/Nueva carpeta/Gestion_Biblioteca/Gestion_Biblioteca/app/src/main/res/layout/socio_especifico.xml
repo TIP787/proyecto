@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvTituloS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Socios"
+        android:textSize="35sp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/tvNombreSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/etNombreSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvDniSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DNI"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/etDniSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="DNI"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvDireccionSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dirección"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/etDireccionSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Dirección"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTelefonoSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/etTelefonoSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Teléfono"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCorreoSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/etCorreoSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Correo"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EDITAR"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btnGuardarSE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ELIMINAR"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>
